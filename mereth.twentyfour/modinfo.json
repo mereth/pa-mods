@@ -1,0 +1,20 @@
+{
+    "context": "client",
+    "identifier": "mereth.twentyfour",
+    "display_name": "twentyfour",
+    "description": "twentyfour",
+    "author": "mereth",
+    "version": "1.0",
+    "build": "64498",
+    "date": "2014/04/27",
+    "signature": "not yet implemented",
+    "id": "mereth.twentyfour",
+    "priority": 100,
+    "scenes": {
+      "uberbar": [
+          "coui://ui/mods/mereth.twentyfour/twentyfour.js",
+          "coui://ui/mods/mereth.twentyfour/twentyfour.css"
+      ]
+    },
+    "enabled": true
+}

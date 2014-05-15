@@ -1,0 +1,17 @@
+{
+    "context": "client",
+    "identifier": "mereth.startingplanet",
+    "display_name": "startingplanet",
+    "description": "startingplanet",
+    "author": "mereth",
+    "version": "1.0",
+    "build": "64498",
+    "date": "2014/04/27",
+    "signature": "not yet implemented",
+    "id": "mereth.startingplanet",
+    "priority": 100,
+    "server_browser": [
+        "coui://ui/mods/mereth.startingplanet/startingplanet.js"
+    ],
+    "enabled": true
+}

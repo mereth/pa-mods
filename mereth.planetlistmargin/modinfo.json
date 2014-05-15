@@ -1,0 +1,17 @@
+{
+    "context": "client",
+    "identifier": "mereth.planetlistmargin",
+    "display_name": "planetlistmargin",
+    "description": "planetlistmargin",
+    "author": "mereth",
+    "version": "1.0",
+    "build": "64498",
+    "date": "2014/04/27",
+    "signature": "not yet implemented",
+    "id": "mereth.planetlistmargin",
+    "priority": 100,
+    "live_game": [
+        "coui://ui/mods/mereth.planetlistmargin/planetlistmargin.css"
+    ],
+    "enabled": true
+}

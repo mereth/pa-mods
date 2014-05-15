@@ -1,0 +1,23 @@
+{
+    "context": "client",
+    "identifier": "mereth.replay",
+    "display_name": "replay",
+    "description": "replay",
+    "author": "mereth",
+    "version": "1.0",
+    "build": "64498",
+    "date": "2014/04/27",
+    "signature": "not yet implemented",
+    "id": "mereth.replay",
+    "priority": 100,
+    "scenes": {
+      "replay_browser": [
+          "coui://ui/mods/mereth.replay/replay.js",
+          "coui://ui/mods/mereth.replay/replay.css"
+      ],
+      "uberbar": [
+          "coui://ui/mods/mereth.replay/show_replay.js"
+      ]
+    },
+    "enabled": true
+}
