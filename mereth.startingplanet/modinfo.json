@@ -1,17 +1,23 @@
 {
     "context": "client",
-    "identifier": "mereth.startingplanet",
-    "display_name": "startingplanet",
-    "description": "startingplanet",
+    "identifier": "fr.mereth.pa.startingplanet",
+    "display_name": "Show Starting Planets",
+    "description": "Change color of starting planets name in server browser to green.",
     "author": "mereth",
-    "version": "1.0",
-    "build": "64498",
-    "date": "2014/04/27",
+    "version": "1.0.0",
+    "build": "66943",
+    "date": "2014/06/13",
     "signature": "not yet implemented",
     "id": "mereth.startingplanet",
     "priority": 100,
-    "server_browser": [
-        "coui://ui/mods/mereth.startingplanet/startingplanet.js"
+    "scenes": {
+        "server_browser": [
+            "coui://ui/mods/mereth.startingplanet/startingplanet.js"
+        ]
+    },
+    "category": [
+        "lobby",
+        "ui"
     ],
     "enabled": true
 }
