@@ -1,5 +1,5 @@
 (function() {
-  $('#contextMenu ul').append('<li><a data-bind="click: model.showReplay" tabindex="-1" href="#"><span class="menu-action">Show Replay</span></a></li>');
+  $('#contextMenu ul').append('<li><a data-bind="click: model.showReplay" tabindex="-1" href="#"><span class="menu-action">Show Replays</span></a></li>');
   
   model.showReplay = function showReplay(user) {
     var uberId = user.uberId();
