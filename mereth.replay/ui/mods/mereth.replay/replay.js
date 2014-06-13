@@ -33,11 +33,12 @@
   
   // handle the showUberId parameter (from uberbar "show replay")
   var showUberId =  $.url().param('showUberId');
+  var displayName = $.url().param('displayName');
   if(showUberId) {
     model.replayListSortOrder = ko.observable([]);
     model.currentReplayListScope = "Mine";
     model.replayListScope(["Mine"]);
-    
     model.uberId = ko.observable(showUberId);
+    $('#replay-list-scope > option')[1].text = decodeURI(displayName);
   }
 })();
