@@ -19,6 +19,4 @@
   };
 
   $("div.planet-name").attr("data-bind", "text: $data.name, style: { color: $data.start ? 'green' : '' }");
-  
-  $("#game-list-header .game").append("<span data-bind=\"text: ' ' + filteredGameList().length + '/' + gameList().length\"></span>");
 })();
