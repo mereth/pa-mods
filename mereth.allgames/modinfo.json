@@ -1,0 +1,23 @@
+{
+    "context": "client",
+    "identifier": "fr.mereth.pa.allgames",
+    "display_name": "Show All Games",
+    "description": "Filter both non-modded and modded games by default.",
+    "author": "mereth",
+    "version": "1.0.0",
+    "build": "67523",
+    "date": "2014/06/21",
+    "signature": "not yet implemented",
+    "id": "mereth.allgames",
+    "priority": 100,
+    "scenes": {
+        "server_browser": [
+            "coui://ui/mods/mereth.allgames/allgames.js"
+        ]
+    },
+    "category": [
+        "lobby",
+        "ui"
+    ],
+    "enabled": true
+}
