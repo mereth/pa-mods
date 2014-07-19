@@ -2,13 +2,12 @@
     "context": "client",
     "identifier": "fr.mereth.pa.allgames",
     "display_name": "Show All Games",
-    "description": "Filter both non-modded and modded games by default.",
+    "description": "Filter both non-modded and modded games by default. Also add colors to the modded column.",
     "author": "mereth",
-    "version": "1.0.0",
-    "build": "67523",
-    "date": "2014/06/21",
+    "version": "1.1.0",
+    "build": "68767",
+    "date": "2014/07/19",
     "signature": "not yet implemented",
-    "id": "mereth.allgames",
     "priority": 100,
     "scenes": {
         "server_browser": [
