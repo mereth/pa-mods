@@ -4,11 +4,10 @@
     "display_name": "Show Starting Planets",
     "description": "Change color of starting planets name in server browser to green.",
     "author": "mereth",
-    "version": "1.0.0",
-    "build": "66943",
-    "date": "2014/06/13",
+    "version": "1.1.0",
+    "build": "69564",
+    "date": "2014/07/26",
     "signature": "not yet implemented",
-    "id": "mereth.startingplanet",
     "priority": 100,
     "scenes": {
         "server_browser": [

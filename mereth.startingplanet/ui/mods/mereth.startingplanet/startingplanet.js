@@ -10,6 +10,7 @@
             'biome' : planet.generator.biome,
             'move_thrust' : planet.required_thrust_to_move,
             'scale' : model.planetSizeClass(planet.generator.radius),
+            'radius' : planet.generator.radius,
             'start' : planet.starting_planet
         });
     });
