@@ -1,0 +1,22 @@
+{
+    "context": "client",
+    "identifier": "fr.mereth.pa.savefilters",
+    "display_name": "Save Server Browser Filters",
+    "description": "You don't like the default filters in the server browser ? This mod will automatically save your selection.",
+    "author": "mereth",
+    "version": "1.0.0",
+    "build": "69721",
+    "date": "2014/07/31",
+    "signature": "not yet implemented",
+    "priority": 110,
+    "scenes": {
+        "server_browser": [
+            "coui://ui/mods/mereth.savefilters/savefilters.js"
+        ]
+    },
+    "category": [
+        "lobby",
+        "ui"
+    ],
+    "enabled": true
+}
