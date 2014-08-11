@@ -4,10 +4,13 @@
     var filterKeys = [
         'regionFilter',
         'gameStateFilter',
+        'gameStatusFilter',
+        'gameModeFilter',
         'planetCountMinFilter',
         'planetCountMaxFilter',
         'playerCountMinFilter',
         'playerCountMaxFilter',
+        'gameTagFilter',
         'moddedGameFilter'
     ];
     
