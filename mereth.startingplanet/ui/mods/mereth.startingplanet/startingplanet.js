@@ -1,7 +1,8 @@
 (function() {
   var oldProcessGameBeacon = model.processGameBeacon;
-  model.processGameBeacon = function(beacon, host_id) {
-    var game = oldProcessGameBeacon(beacon, host_id);
+  model.processGameBeacon = function() {
+    var game = oldProcessGameBeacon.apply(this, arguments);
+    var beacon = arguments[0];
     
     var p = new Array();
     _.forEach(beacon.game.system.planets,function(planet) {
