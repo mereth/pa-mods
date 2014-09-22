@@ -4,11 +4,10 @@
     "display_name": "Contact Replays",
     "description": "Add a 'Show Replays' entry in the UberBar contextual menu.",
     "author": "mereth",
-    "version": "1.0.0",
-    "build": "66943",
-    "date": "2014/06/13",
+    "version": "1.1.0",
+    "build": "72332",
+    "date": "2014/09/22",
     "signature": "not yet implemented",
-    "id": "mereth.replay",
     "priority": 100,
     "scenes": {
         "replay_browser": [
@@ -23,5 +22,7 @@
         "uberbar",
         "ui"
     ],
+    "icon": "http://i.imgur.com/wgvzSrZ.png",
+    "forum": "https://github.com/mereth/pa-mods/issues",
     "enabled": true
 }

@@ -7,38 +7,34 @@
     return replay;
   };
   
-  // replace LobbyId column by StartTime
-  $('#game-list div.lobbyid').attr('data-bind', 'text: starttime');
-  $('#game-list-header div.lobbyid').text('StartDate');
-  
-  // fix updateReplayData spam
-  model.replayListSortOrder = ko.observable([]);
-  model.replayListScope = ko.observable([]);
-  model.replayListScope.subscribe(function (arr) {
-      var newvalue = (arr.length > 0) ? arr[0] : model.defaultReplayListScope;
-      console.log(newvalue);
-      if(model.currentReplayListScope != newvalue) {
-        console.log(model.currentReplayListScope);
-        model.currentReplayListScope = newvalue;
-        model.updateReplayData();
-      }
-  });
-  model.replayListSortOrder.subscribe(function (arr) {
-      var newvalue = (arr.length > 0) ? arr[0] : model.defaultReplayListSortOrder;
-      if(model.currentReplayListSortOrder != newvalue) {
-        model.currentReplayListSortOrder = newvalue;
-        model.updateReplayData();
-      }
-  });
+  // resize buildVersion column
+  $('#game-list-header div.buildVersion.col-md-3').removeClass('col-md-3').addClass('col-md-1');
+  $('#game-list div.buildVersion.col-md-3').removeClass('col-md-3').addClass('col-md-1');
+  // add StartTime column
+  $('#game-list-header div.duration').after('<div class="col-md-2 starttime">StartTime</div>');
+  $('#game-list div.duration').after('<div class="col-md-2 starttime" data-bind="text: starttime"></div>');
   
   // handle the showUberId parameter (from uberbar "show replay")
   var showUberId =  $.url().param('showUberId');
   var displayName = $.url().param('displayName');
   if(showUberId) {
-    model.replayListSortOrder = ko.observable([]);
-    model.currentReplayListScope = "Mine";
-    model.replayListScope(["Mine"]);
-    model.uberId = ko.observable(showUberId);
-    $('#replay-list-scope > option')[1].text = decodeURI(displayName);
+    // replace your uberId by the targeted contact uberId
+    model.uberId(showUberId);
+    
+    // switch to "Mine" scope
+    // and recreate the observable to avoid duplicate updateReplayData call 
+    model.replayListScope = ko.observable("Mine");
+    model.replayListScope.subscribe(function () {
+        model.updateReplayData();
+    });
+    
+    // update 'My Games Only' option label to the targeted contact name
+    var option = $($('#replay-list-scope > option')[1]);
+    if(option) {
+        var $option = $(option);
+        $option.removeAttr('locattr');
+        $option.removeAttr('locdata');
+        $option.text(decodeURI(displayName));
+    }
   }
 })();
