@@ -19,7 +19,7 @@
   var displayName = $.url().param('displayName');
   if(showUberId) {
     // replace your uberId by the targeted contact uberId
-    model.uberId(showUberId);
+    model.uberId = ko.observable(showUberId);
     
     // switch to "Mine" scope
     // and recreate the observable to avoid duplicate updateReplayData call 
