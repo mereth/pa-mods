@@ -11,7 +11,8 @@
         'playerCountMinFilter',
         'playerCountMaxFilter',
         'gameTagFilter',
-        'moddedGameFilter'
+        'moddedGameFilter',
+        'lockedFilter'
     ];
     
     // restore previously saved filters
@@ -55,9 +56,10 @@
         api.Panel.message('game', 'navigate_to', 'coui://ui/main/game/server_browser/server_browser.html');
     };
     
+
     // add "Clear Filters" button
     var html = '<div style="border-top: 1px solid #333; margin: 8px 0px;" data-bind="click: msf_clearFilters">\
-        <div class="btn_std" style="margin-top: 8px; width:100%;"> \
+            <div class="btn_std" style="margin-top: 8px; width:100%;">\
             <div class="btn_label" style="">\
                 <loc data-i18n="server_browser:clear_filters.message" desc="">Clear Filters</loc>\
             </div>\

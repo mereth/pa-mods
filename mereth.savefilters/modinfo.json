@@ -2,11 +2,11 @@
     "context": "client",
     "identifier": "fr.mereth.pa.savefilters",
     "display_name": "Save Server Browser Filters",
-    "description": "You don't like the default filters in the server browser ? This mod will automatically save your selection.",
-    "author": "mereth",
-    "version": "1.1.0",
-    "build": "70289",
-    "date": "2014/08/11",
+    "description": "This mod will automatically save your server browser filter selections.",
+    "author": "Mereth, ViolentMind",
+    "version": "1.2.0",
+    "build": "86765",
+    "date": "2015/09/06",
     "signature": "not yet implemented",
     "priority": 110,
     "scenes": {
@@ -18,5 +18,6 @@
         "lobby",
         "ui"
     ],
-    "enabled": true
+    "icon": "http://i.imgur.com/1WxAjgu.png",
+    "forum": "https://github.com/mereth/pa-mods/issues"
 }
